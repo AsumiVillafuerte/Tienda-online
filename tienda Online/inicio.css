@@ -1,0 +1,466 @@
+/* encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7b86eb;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Estilos del menú de navegación */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #ffdd57;
+}
+
+/* Estilos del carrito */
+.cart {
+    position: relative;
+}
+
+.cart-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos del Banner */
+.banner {
+    position: relative;
+    background-image: url('/imagenes/oferta.webp'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animación del texto */
+.banner-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slide-in 1.5s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffdd57;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffc107;
+}
+
+
+/* Estilo del título de la sección */
+.section-title {
+    text-align: center; /* Centra el texto del título */
+    font-size: 2rem; /* Tamaño de fuente */
+    margin: 40px 0; /* Margen superior e inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Sección de categorías */
+.categories {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f8f8f8; /* Fondo opcional para la sección */
+}
+
+/* Diseño de la cuadrícula de categorías */
+.categories-grid {
+    display: flex; /* Utiliza flexbox para organizar las categorías en fila */
+    justify-content: space-between; /* Espaciado uniforme entre las categorías */
+    flex-wrap: wrap; /* Permite que las categorías se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Elemento de categoría */
+.category-item {
+    background-color: white; /* Fondo blanco para cada categoría */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del elemento */
+    margin: 10px; /* Espacio entre categorías */
+    width: calc(33.33% - 20px); /* Ancho fijo que ocupa 1/3 del contenedor */
+    height: 250px; /* Altura fija para todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+/* Efecto de hover en el elemento de categoría */
+.category-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del elemento al pasar el ratón */
+}
+
+/* Imagen de categoría */
+.category-image {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-top-left-radius: 10px; /* Bordes redondeados superiores */
+    border-top-right-radius: 10px; /* Bordes redondeados superiores */
+}
+
+/* Nombre de la categoría */
+.category-name {
+    font-size: 1.2rem; /* Tamaño de fuente para el nombre de la categoría */
+    margin: 10px 0; /* Margen superior e inferior */
+    color: #333; /* Color del texto */
+}
+
+
+/*seccion2*/
+
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0;
+}
+
+/* Galería de productos en fila */
+.product-gallery {
+    padding: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre productos */
+}
+
+/* Tarjeta de producto */
+.product-card {
+    flex: 1; /* Cada tarjeta toma el mismo ancho */
+    margin: 0 10px; /* Espacio horizontal entre tarjetas */
+    min-width: 200px; /* Tamaño mínimo de cada tarjeta */
+    max-width: 250px; /* Tamaño máximo de cada tarjeta */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Botón de "Agregar al carrito" */
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #ffdd57;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #ffc107;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilos para el botón "Agregar al carrito" */
+.add-to-cart {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #4CAF50; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    position: relative; /* Para el contador */
+}
+
+/* Oculta el checkbox */
+.cart-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Estilo del contador */
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px; /* Ajusta según necesites */
+    right: -10px; /* Ajusta según necesites */
+    background: red; /* Color de fondo del contador */
+    color: white; /* Color del texto del contador */
+    border-radius: 50%; /* Hace el contador circular */
+    padding: 5px 8px; /* Espaciado dentro del contador */
+    font-size: 12px; /* Tamaño de fuente */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Muestra el contador cuando el checkbox está marcado */
+.cart-checkbox:checked ~ .cart-icon .cart-count {
+    display: block; /* Muestra el contador */
+}
+
+/* Muestra el número de productos */
+.cart-checkbox:checked ~ .cart-icon .cart-count::after {
+    content: "1"; /* Muestra un número de ejemplo */
+}
+
+
+/*Carrito*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección del carrito */
+.cart {
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Color del título */
+}
+
+/* Estilos de los artículos en el carrito */
+.cart-items {
+    display: flex;
+    flex-direction: column; /* Columna para la lista de productos */
+    gap: 15px; /* Espacio entre los artículos */
+}
+
+.cart-item {
+    display: flex;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.cart-item-image-container {
+    flex: 0 0 100px; /* Ancho fijo para la imagen */
+    overflow: hidden; /* Ocultar parte sobrante de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.cart-item-image {
+    width: 100%; /* Imagen llena el contenedor */
+    height: auto; /* Mantener relación de aspecto */
+}
+
+.cart-item-details {
+    margin-left: 15px; /* Espaciado entre imagen y detalles */
+    flex-grow: 1; /* Permitir que los detalles crezcan */
+}
+
+.cart-item-name {
+    font-size: 1.2em; /* Tamaño de fuente mayor */
+    margin: 0; /* Eliminar margen */
+    color: #555; /* Color del nombre */
+}
+
+.cart-item-price {
+    color: #e74c3c; /* Color rojo para el precio */
+    font-size: 1.1em; /* Tamaño de fuente para el precio */
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.cart-item-quantity {
+    width: 50px; /* Ancho fijo para el selector de cantidad */
+    margin-right: 15px; /* Espacio entre cantidad y botón eliminar */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Botón eliminar */
+.remove-item {
+    background-color: #e74c3c; /* Color rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor a mano */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+}
+
+.remove-item:hover {
+    background-color: #050505; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumentar ligeramente el botón */
+}
+
+/* Estilos del resumen del carrito */
+.cart-summary {
+    margin-top: 20px;
+    padding: 15px; 
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.summary-title {
+    margin: 0; /* Eliminar margen */
+    font-size: 1.5em; /* Tamaño de fuente mayor */
+    color: #333; /* Color del título */
+}
+
+.total-price {
+    font-size: 1.2em; /* Tamaño de fuente para el total */
+    margin: 10px 0; /* Espaciado vertical */
+    font-weight: bold; /* Texto en negrita */
+    color: #555; /* Color del total */
+}
+
+.checkout-button {
+    background-color: #3498db; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor a mano */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+}
+
+.checkout-button:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumentar ligeramente el botón */
+}
+
+/* Ocultar checkbox */
+.remove-checkbox {
+    display: none; /* Oculta el checkbox */
+}
+
+/* Estilo del label de eliminar */
+.remove-item {
+    cursor: pointer;
+    color: #ffffff; /* Color rojo para resaltar */
+    text-decoration: underline; /* Subrayar el texto */
+}
+
+/* Ocultar el item del carrito cuando el checkbox está marcado */
+.remove-checkbox:checked + .remove-item {
+    display: none; /* Oculta el label */
+}
+
+/* Ocultar el contenedor del cart-item si el checkbox está marcado */
+.remove-checkbox:checked {
+    display: none; /* Evita mostrar el checkbox */
+}
+
+/* Ocultar el cart-item completo cuando el checkbox está marcado */
+.remove-checkbox:checked ~ .cart-item-details {
+    display: none; /* Oculta detalles del item */
+}
