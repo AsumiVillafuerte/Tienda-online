@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/imagenes/venta.png" alt="Logotipo de la tienda">
+        </div>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#" class="cart-icon">
+                <span class="cart-count"></span>
+                🛒
+            </a>
+        </div>
+    </header>
+
+     <section class="banner">
+        <div class="banner-content">
+            <h1 class="banner-text">¡Oferta Especial en nuestro producto destacado!</h1>
+            <a href="#" class="cta-button">Compra ahora</a>
+        </div>
+    </section>
+
+   <section class="categories">
+    <h2 class="section-title">Explora nuestras categorías</h2>
+    <div class="categories-grid">
+        <div class="category-item">
+            <img src="/imagenes/ropa.webp" alt="Ropa" class="category-image">
+            <p class="category-name">Ropa</p>
+        </div>
+        <div class="category-item">
+            <img src="/imagenes/electronica.avif" alt="Electrónica" class="category-image">
+            <p class="category-name">Electrónica</p>
+        </div>
+        <div class="category-item">
+            <img src="/imagenes/hogar.jpg" alt="Hogar" class="category-image">
+            <p class="category-name">Hogar</p>
+        </div>
+        <!-- Agrega más categorías si es necesario -->
+    </div>
+</section>
+
+<!-- Galería de Productos en Fila -->
+<section class="product-gallery">
+    <h2 class="section-title">Sección de Ropa</h2>
+    <div class="product-row">
+        <div class="product-card">
+            <img src="/imagenes/polo-oversize.webp" alt="Polo Oversize" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Polo Oversize</h3>
+                <p class="product-price">$19.99</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/jeans.webp" alt="Jeans" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Jeans</h3>
+                <p class="product-price">$29.99</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/overol.webp" alt="Overoles" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Overoles</h3>
+                <p class="product-price">$30.00</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+</section>
+
+<section class="product-gallery">
+    <h2 class="section-title">Sección Electrónica</h2>
+    <div class="product-row">
+        <div class="product-card">
+            <img src="/imagenes/laptop.webp" alt="Laptop HP" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Laptop HP</h3>
+                <p class="product-price">$19.99</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/compu.jpg" alt="Computadora Gamer" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Computadora Gamer</h3>
+                <p class="product-price">$29.99</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/audifonos.avif" alt="Audífonos" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Audífonos</h3>
+                <p class="product-price">$30.00</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-gallery">
+    <h2 class="section-title">Sección Hogar</h2>
+    <div class="product-row">
+        <div class="product-card">
+            <img src="/imagenes/mesa.webp" alt="Mesa" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Mesa</h3>
+                <p class="product-price">$50.00</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/cuadro.webp" alt="Cuadro" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Cuadro</h3>
+                <p class="product-price">$25.00</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="/imagenes/w=800,h=800,fit=pad (1).avif" alt="Oja" class="product-image"> <!-- Asegúrate de que esta imagen esté disponible -->
+            <div class="product-info">
+                <h3 class="product-name">Lampara</h3>
+                <p class="product-price">$15.00</p>
+                <label class="add-to-cart">
+                    <input type="checkbox" class="cart-checkbox">
+                    Agregar al carrito
+                </label>
+            </div>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+</section>
+
+<section class="cart">
+    <h2 class="section-title">Carrito de Compras</h2>
+    <div class="cart-items">
+        <div class="cart-item">
+            <div class="cart-item-image-container">
+                <img src="/imagenes/laptop.webp" alt="Laptop HP" class="cart-item-image">
+            </div>
+            <div class="cart-item-details">
+                <h3 class="cart-item-name">Laptop HP</h3>
+                <p class="cart-item-price">$19.99</p>
+                <div class="cart-item-controls">
+                    <input type="number" value="1" class="cart-item-quantity" min="1">
+                    <label class="remove-item">
+                        <input type="checkbox" class="remove-checkbox">
+                        Eliminar
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div class="cart-item-image-container">
+                <img src="/imagenes/jeans.webp" alt="Jeans Mon" class="cart-item-image">
+            </div>
+            <div class="cart-item-details">
+                <h3 class="cart-item-name">Jeans Mon</h3>
+                <p class="cart-item-price">$29.99</p>
+                <div class="cart-item-controls">
+                    <input type="number" value="1" class="cart-item-quantity" min="1">
+                    <label class="remove-item">
+                        <input type="checkbox" class="remove-checkbox">
+                        Eliminar
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+
+    <div class="cart-summary">
+        <h3 class="summary-title">Total del Carrito</h3>
+        <p class="total-price">Total: $49.98</p>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</section>
+
+
+
+
+
+</body>
+</html>
